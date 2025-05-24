@@ -1,0 +1,220 @@
+/* Background */
+.background {
+  background-image: url("../images/zombiebg.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Sun icon (hamburger) */
+.hamburger-icon {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1002;
+}
+
+.hamburger-icon img {
+  width: 50px;
+  height: auto;
+  filter: drop-shadow(0 0 8px #fcf951);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Sidebar (hamburger menu panel) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: #425527;
+  z-index: 998;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: left 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+/* Sidebar navigation */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 80px;
+}
+
+/* Sidebar buttons */
+.sidebar-button {
+  width: 100%;
+  height: 70px;
+  background-color: #294016;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 white;
+}
+
+.sidebar-button:hover {
+  box-shadow: 0 0 20px white;
+  font-size: 22px;
+}
+
+/* Sidebar image */
+.sidebar-image {
+  margin-top: auto;
+  padding-bottom: 4%;
+}
+
+/* Back arrow */
+.back-arrow {
+  position: fixed;
+  top: 70px;
+  left: 30px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  z-index: 1001;
+  filter: drop-shadow(0 0 5px black);
+  transition: transform 0.3s ease, filter 0.2s ease;
+}
+
+.back-arrow:hover {
+  transform: scale(1.2);
+}
+
+.back-arrow:active {
+  filter: drop-shadow(0 0 8px white);
+}
+
+/* Music button */
+#music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Title box */
+.title-box {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.title-box input {
+  width: 60%;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3d4a3d;
+  text-align: center;
+  box-shadow: 0 0 15px 4px #ffffff;
+  color: white;
+  font-weight: 450;
+}
+
+/* Zombie grid layout */
+.zombie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px;
+  margin-top: 40px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Individual zombie box */
+.zombie-box {
+  width: 75%;
+  aspect-ratio: 1 / 1;
+  background-color: #4C5762;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.zombie-box img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Hover effects and note tooltip */
+.zombie-box:hover {
+  box-shadow: 0 0 20px 8px #fafcfa;
+  transform: scale(1.05);
+}
+
+.zombie-box::after {
+  content: attr(data-note);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.zombie-box:hover::after {
+  opacity: 1;
+}
+
+/* Floating detailed tooltip */
+.floating-tooltip {
+  position: absolute;
+  background-color: #92a0ad;
+  color: #222;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #888;
+  font-size: 14px;
+  max-width: 200px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  display: none;
+  z-index: 9999;
+  white-space: normal;
+  font-family: 'Verdana', sans-serif;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}

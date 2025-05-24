@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Intro Section */
+.intro-container {
+  background-image: url("../images/pvzbgimage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;
+  text-align: center;
+  gap: 30px; /* spacing between logo and button */
+  padding: 20px 0;
+}
+
+.logo-image {
+  width: 550px; 
+  transform: translateY(-140px);
+}
+
+.explore-btn {
+  padding: 15px 40px;
+  background-color: #8f9a58;
+  color: #2a4527;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-115px);
+}
+
+.explore-btn:hover {
+  background-color: #8f9a58;
+  box-shadow: 0 0 10px white, 0 0 20px white; 
+}
+
+/* Music Button */
+#music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
