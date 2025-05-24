@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plants Almanac</title>
+  <link rel="stylesheet" href="../css/plants.css" />
+</head>
+<body>
+  <!-- Full background -->
+  <div class="background"></div>
+
+  <!-- Sun nav (hamburger) icon -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Music toggle button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <audio id="bg-music" loop>
+    <source src="../music/chooseyourseeds.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Sidebar hamburger menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Back Arrow -->
+  <a href="viewalmanac.html" class="back-arrow">&#8592;</a>
+
+  <!-- Title box -->
+  <div class="title-box">
+    <input type="text" value="Suburban Almanac - Plants" readonly />
+  </div>
+
+  <!-- Plant grid container -->
+  <div class="plant-grid">
+
+    <!-- Row 1 -->
+    <div class="plant-box">
+      <img src="../images/peashooter.webp" alt="Peashooter" />
+    </div>
+    <div class="plant-box" data-note="Sunflower - 50 ☀️">
+      <img src="../images/sunflower.webp" alt="Sunflower" />
+    </div>
+    <div class="plant-box" data-note="Cherry Bomb - 150 ☀️">
+      <img src="../images/cherry bomb.webp" alt="Cherry Bomb" />
+    </div>
+    <div class="plant-box" data-note="Wall-Nut - 50 ☀️">
+      <img src="../images/wallnut.webp" alt="Wall-Nut" />
+    </div>
+    <div class="plant-box" data-note="Potato Mine - 25 ☀️">
+      <img src="../images/potato mine.webp" alt="Potato Mine" />
+    </div>
+    <div class="plant-box" data-note="Snow Pea - 175 ☀️">
+      <img src="../images/snowpea.webp" alt="Snow Pea" />
+    </div>
+    <div class="plant-box" data-note="Chomper - 150 ☀️">
+      <img src="../images/chomper.webp" alt="Chomper" />
+    </div>
+    <div class="plant-box" data-note="Repeater - 200 ☀️">
+      <img src="../images/repeater.webp" alt="Repeater" />
+    </div>
+
+    <!-- Row 2 -->
+    <div class="plant-box" data-note="Puff-shroom - 0 ☀️">
+      <img src="../images/puffshroom.webp" alt="Puff-shroom" />
+    </div>
+    <div class="plant-box" data-note="Sun-shroom - 25 ☀️">
+      <img src="../images/sunshroom.webp" alt="Sun-shroom" />
+    </div>
+    <div class="plant-box" data-note="Fume-shroom - 75 ☀️">
+      <img src="../images/fumeshroom.webp" alt="Fume-shroom" />
+    </div>
+    <div class="plant-box" data-note="Grave Buster - 75 ☀️">
+      <img src="../images/gravebuster.webp" alt="Grave Buster" />
+    </div>
+    <div class="plant-box" data-note="Hypno-shroom - 75 ☀️">
+      <img src="../images/hypnoshroom.webp" alt="Hypno-shroom" />
+    </div>
+    <div class="plant-box" data-note="Scaredy-shroom - 25 ☀️">
+      <img src="../images/scaredyshroom.webp" alt="Scaredy-shroom" />
+    </div>
+    <div class="plant-box" data-note="Ice-shroom - 75 ☀️">
+      <img src="../images/iceshroom.webp" alt="Ice-shroom" />
+    </div>
+    <div class="plant-box" data-note="Doom-shroom - 125 ☀️">
+      <img src="../images/doomshroom.webp" alt="Doom-shroom" />
+    </div>
+
+    <!-- Row 3 -->
+    <div class="plant-box" data-note="Lily Pad - 25 ☀️">
+      <img src="../images/lilypad.webp" alt="Lily Pad" />
+    </div>
+    <div class="plant-box" data-note="Squash - 50 ☀️">
+      <img src="../images/squash.webp" alt="Squash" />
+    </div>
+    <div class="plant-box" data-note="Threepeater - 325 ☀️">
+      <img src="../images/threepeater.webp" alt="Threepeater" />
+    </div>
+    <div class="plant-box" data-note="Tangle Kelp - 25 ☀️">
+      <img src="../images/tanglekelp.webp" alt="Tangle Kelp" />
+    </div>
+    <div class="plant-box" data-note="Jalapeno - 125 ☀️">
+      <img src="../images/jalapeno.png" alt="Jalapeno" />
+    </div>
+    <div class="plant-box" data-note="Spikeweed - 100 ☀️">
+      <img src="../images/spikeweed.png" alt="Spikeweed" />
+    </div>
+    <div class="plant-box" data-note="Torchwood - 175 ☀️">
+      <img src="../images/torchwood.webp" alt="Torchwood" />
+    </div>
+    <div class="plant-box" data-note="Tall-nut - 125 ☀️">
+      <img src="../images/tallnut.webp" alt="Tall-nut" />
+    </div>
+
+    <!-- Row 4 -->
+    <div class="plant-box" data-note="Sea-shroom - 0 ☀️">
+      <img src="../images/seashroom.webp" alt="Sea-shroom" />
+    </div>
+    <div class="plant-box" data-note="Plantern - 25 ☀️">
+      <img src="../images/lantern.webp" alt="Plantern" />
+    </div>
+    <div class="plant-box" data-note="Cactus - 125 ☀️">
+      <img src="../images/cactus.webp" alt="Cactus" />
+    </div>
+    <div class="plant-box" data-note="Blover - 100 ☀️">
+      <img src="../images/blover.webp" alt="Blover" />
+    </div>
+    <div class="plant-box" data-note="Split Pea - 125 ☀️">
+      <img src="../images/split pea.webp" alt="Split Pea" />
+    </div>
+    <div class="plant-box" data-note="Starfruit - 125 ☀️">
+      <img src="../images/starfruit.webp" alt="Starfruit" />
+    </div>
+    <div class="plant-box" data-note="Pumpkin - 125 ☀️">
+      <img src="../images/pumpkin.png" alt="Pumpkin" />
+    </div>
+    <div class="plant-box" data-note="Magnet-shroom - 100 ☀️">
+      <img src="../images/magnetshroom.webp" alt="Magnet-shroom" />
+    </div>
+
+    <!-- Row 5 -->
+    <div class="plant-box" data-note="Cabbage-pult - 100 ☀️">
+      <img src="../images/cabbage.webp" alt="Cabbage-pult" />
+    </div>
+    <div class="plant-box" data-note="Flower Pot - 25 ☀️">
+      <img src="../images/flowerpot.webp" alt="Flower Pot" />
+    </div>
+    <div class="plant-box" data-note="Kernel-pult - 100 ☀️">
+      <img src="../images/kernel.webp" alt="Kernel-pult" />
+    </div>
+    <div class="plant-box" data-note="Coffee Bean - 75 ☀️">
+      <img src="../images/coffeebean.webp" alt="Coffee Bean" />
+    </div>
+    <div class="plant-box" data-note="Garlic - 50 ☀️">
+      <img src="../images/garlic.webp" alt="Garlic" />
+    </div>
+    <div class="plant-box" data-note="Umbrella Leaf - 100 ☀️">
+      <img src="../images/umbrellaleaf.webp" alt="Umbrella Leaf" />
+    </div>
+    <div class="plant-box" data-note="Marigold - 50 ☀️">
+      <img src="../images/marigold.webp" alt="Marigold" />
+    </div>
+    <div class="plant-box" data-note="Melon-pult - 300 ☀️">
+      <img src="../images/melon.webp" alt="Melon-pult" />
+    </div>
+
+    <!-- Row 6 -->
+    <div class="plant-box" data-note="Gatling Pea - 250 ☀️">
+      <img src="../images/gatling.webp" alt="Gatling Pea" />
+    </div>
+    <div class="plant-box" data-note="Twin Sunflower - 150 ☀️">
+      <img src="../images/twinsunflower.webp" alt="Twin Sunflower" />
+    </div>
+    <div class="plant-box" data-note="Gloom-shroom - 150 ☀️">
+      <img src="../images/gloomshroom.webp" alt="Gloom-shroom" />
+    </div>
+    <div class="plant-box" data-note="Cat-tail - 225 ☀️">
+      <img src="../images/cattail.webp" alt="Cat-tail" />
+    </div>
+    <div class="plant-box" data-note="Winter Melon - 200 ☀️">
+      <img src="../images/wintermelon.webp" alt="Winter Melon" />
+    </div>
+    <div class="plant-box" data-note="Gold Magnet - 50 ☀️">
+      <img src="../images/goldmagnet.webp" alt="Gold Magnet" />
+    </div>
+    <div class="plant-box" data-note="Spikerock - 125 ☀️">
+      <img src="../images/spikerock.webp" alt="Spikerock" />
+    </div>
+    <div class="plant-box" data-note="Cob Cannon - 500 ☀️">
+      <img src="../images/cob cannon.webp" alt="Cob Cannon" />
+    </div>
+    <div class="plant-box" data-note="Imitater">
+      <img src="../images/immitater.webp" alt="Imitater" />
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/plants.js"></script>
+  <script src="../js/homepage.js"></script>
+</body>
+</html>

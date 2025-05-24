@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Downloads</title>
+  <link rel="stylesheet" href="../css/downloadpvz.css">
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background"></div>
+
+  <!-- Back Arrow to Homepage -->
+  <a href="homepage.html" class="back-arrow">&#8592;</a>
+
+  <!-- Hamburger Menu Icon (Sun) -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Audio Toggle Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/zengarden.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Page Title -->
+  <div class="page-title">Downloads</div>
+
+  <!-- Download Section -->
+  <div class="download-section">
+
+    <!-- Box 1: App Store -->
+    <div class="download-box-wrapper">
+      <a href="https://apps.apple.com/us/app/plants-vs-zombies/id893677096" target="_blank" class="download-box">
+        <img src="../images/appstore.png" alt="App Store Logo">
+      </a>
+      <div class="store-label">App Store</div>
+    </div>
+
+    <!-- Box 2: Google Play -->
+    <div class="download-box-wrapper">
+      <a href="https://play.google.com/store/apps/details?id=com.ea.game.pvzfree_row&hl=en" target="_blank" class="download-box">
+        <img src="../images/googleplay.png" alt="Google Play Logo">
+      </a>
+      <div class="store-label">Google Play</div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../js/homepage.js"></script>
+</body>
+</html>

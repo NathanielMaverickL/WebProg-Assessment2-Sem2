@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survival</title>
+  <link rel="stylesheet" href="../css/survival.css" />
+</head>
+<body>
+  <!-- Full-page background -->
+  <div class="background"></div>
+
+  <!-- Sun nav (hamburger) icon -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Music Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/waterygraves.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sidebar hamburger menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Page title -->
+  <h1 class="page-title">Survival Mode</h1>
+
+  <!-- Survival Grid (4x2) -->
+  <div class="survival-grid">
+    <div class="survival-mode">
+      <img src="../images/survivalday.webp" alt="Survival: Day" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/survivalnight.webp" alt="Survival: Night" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/survivalpool.webp" alt="Survival: Pool" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/survivalfog.webp" alt="Survival: Fog" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/survivalroof.webp" alt="Survival: Roof" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/dayhard.webp" alt="Survival: Day (Hard)" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/nighthard.webp" alt="Survival: Night (Hard)" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/poolhard.webp" alt="Survival: Pool (Hard)" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/foghard.webp" alt="Survival: Fog (Hard)" />
+    </div>
+    <div class="survival-mode">
+      <img src="../images/roofhard.webp" alt="Survival: Roof (Hard)" />
+    </div>
+
+    <!-- Centered Bonus Mode -->
+    <div class="survival-mode bonus-survival">
+      <img src="../images/survivalendless.webp" alt="Survival: Endless" />
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/survival.js"></script>
+  <script src="../js/homepage.js"></script>
+</body>
+</html>

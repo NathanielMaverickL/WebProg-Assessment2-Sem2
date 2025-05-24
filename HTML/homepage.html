@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garden</title>
+  <link rel="stylesheet" href="../css/homepage.css" />
+</head>
+<body>
+
+  <!-- Back Arrow with Exit Confirmation -->
+  <div class="back-arrow" onclick="confirmExit()">&#8592;</div>
+
+  <!-- Sun Hamburger Icon -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- PvZ Logo -->
+  <div class="logo-container">
+    <img src="../images/pvzlogo.webp" alt="Plants vs Zombies Logo" />
+  </div>
+
+  <!-- Music Toggle Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/roof.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Main Navigation Buttons -->
+  <div class="nav-bar">
+    <a href="homepage.html" class="nav-button">About PVZ</a>
+    <a href="viewalmanac.html" class="nav-button">Almanac</a>
+    <a href="downloadpvz.html" class="nav-button">Download PVZ</a>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="main-box">
+    <h2>About PvZ</h2>
+    <p>
+      Plants vs. Zombies (PVZ1) is a tower defense game developed by PopCap Games way back in 2009 that quickly became a cult classic for its quirky humor, strategic gameplay,
+      and easier gaming style, making it interactive for both game itself and the user. In the game, players must protect their homes from storming zombies by strategically placing 
+      varities of plants, each with their unique abilities and powers to take down a zombie, across the lawn, from sunflowers that providing and producing sun and energy to plants in
+      able to defend the house from the approaching zombies, every plant plays a crucial role in the defensive lineup. As levels progress, the game introduces new environments such as
+      rooftops, nighttime, foggy night, and even pool, making the challenge increased and keeping the gameplay fresh and exciting, it's the mix of casual play and tactical decision-making
+      that made PVZ1 a favorite among gamers of all ages and solidified its place as one of the most iconic games of its generation.
+    </p>
+  </div>
+
+  <!-- Mechanics Section -->
+  <div class="box-2">
+    <h2>Mechanics</h2>
+    <p><b>Goal:</b> Protect your house from waves of silly but dangerous zombies by planting cool plants that fight for you. If they reach your house, it's game over.</p>
+    <p><b>Collect Sun:</b> Sun is the resource used to plant. It falls from the sky in day levels, and is produced by Sunflowers or Sun-shrooms in night levels.</p>
+    <p><b>Choose & Plant Strategically:</b> Pick the right mix of attacking, blocking, exploding, and sun-generating plants. Spread them wisely across lanes.</p>
+    <p><b>Watch the Lanes:</b> Zombies move straight down lanes. Each needs to be defended or they'll break through.</p>
+    <p><b>Survive the Waves:</b> Levels end with massive zombie rushes. Be ready!</p>
+    <p><b>Use Lawn Defenses:</b> Lawnmowers, pool cleaners, and roof cleaners will save you once per lane, but only once.</p>
+  </div>
+
+  <!-- Levels Section -->
+  <div class="box-3">
+    <h2>Levels</h2>
+    <div class="image-row top-row">
+      <figure>
+        <img src="../images/daytime.webp" alt="Daytime" />
+        <figcaption><strong>Daytime</strong><br />Where your adventure begins under the sun</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/nighttime.webp" alt="Nighttime" />
+        <figcaption><strong>Nighttime</strong><br />The zombies come out when the sun goes down</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/poolday.webp" alt="Pool Day" />
+        <figcaption><strong>Pool Day</strong><br />Double lanes mean double trouble in the water</figcaption>
+      </figure>
+    </div>
+
+    <div class="image-row bottom-row">
+      <figure>
+        <img src="../images/fog.webp" alt="Fog" />
+        <figcaption><strong>Fog</strong><br />Visibility gets tricky as the mist rolls in</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/roof.webp" alt="Roof" />
+        <figcaption><strong>Roof</strong><br />Slanted tiles make planting a whole new challenge</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../js/homepage.js"></script>
+
+</body>
+</html>

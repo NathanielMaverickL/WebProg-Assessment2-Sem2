@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zombies Almanac</title>
+  <link rel="stylesheet" href="../css/zombies.css" />
+</head>
+<body>
+  <!-- Full background -->
+  <div class="background"></div>
+
+  <!-- Sun nav (hamburger) icon -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Music button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background music -->
+  <audio id="bg-music" loop>
+    <source src="../music/chooseyourseeds.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Sidebar hamburger menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Back Arrow -->
+  <a href="viewalmanac.html" class="back-arrow">&#8592;</a>
+
+  <!-- Title box -->
+  <div class="title-box">
+    <input type="text" value="Suburban Almanac - Zombies" readonly />
+  </div>
+
+  <!-- Zombie grid container -->
+  <div class="zombie-grid">
+    <!-- Zombies -->
+    <div class="zombie-box" data-note="Zombie">
+      <img src="../images/zombie.webp" alt="Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Flag Zombie">
+      <img src="../images/flagzombie.webp" alt="Flag Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Conehead Zombie">
+      <img src="../images/conehead.webp" alt="Conehead Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Pole Vaulting Zombie">
+      <img src="../images/polevaulting.webp" alt="Pole Vaulting Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Buckethead Zombie">
+      <img src="../images/buckethead.webp" alt="Buckethead Zombie" />
+    </div>
+
+    <div class="zombie-box" data-note="Newspaper Zombie">
+      <img src="../images/newspaper.webp" alt="Newspaper Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Screen Door Zombie">
+      <img src="../images/screendoor.webp" alt="Screen Door Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Football Zombie">
+      <img src="../images/football.webp" alt="Football Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Dancing Zombie">
+      <img src="../images/disco.webp" alt="Dancing Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Backup Dancer">
+      <img src="../images/backupdancer.webp" alt="Backup Dancer" />
+    </div>
+
+    <div class="zombie-box" data-note="Ducky Tube Zombie">
+      <img src="../images/duckytube.webp" alt="Ducky Tube Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Snorkel Zombie">
+      <img src="../images/snorkel.webp" alt="Snorkel Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Zomboni">
+      <img src="../images/zomboni.webp" alt="Zomboni" />
+    </div>
+    <div class="zombie-box" data-note="Bobsled Team">
+      <img src="../images/bobsled.webp" alt="Bobsled Team" />
+    </div>
+    <div class="zombie-box" data-note="Dolphin Rider Zombie">
+      <img src="../images/dolphin.webp" alt="Dolphin Rider" />
+    </div>
+
+    <div class="zombie-box" data-note="Jack-in-the-Box Zombie">
+      <img src="../images/jackinabox.webp" alt="Jack-in-the-Box" />
+    </div>
+    <div class="zombie-box" data-note="Balloon Zombie">
+      <img src="../images/balloon.webp" alt="Balloon Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Digger Zombie">
+      <img src="../images/digger.webp" alt="Digger Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Pogo Zombie">
+      <img src="../images/pogo.webp" alt="Pogo Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Yeti Zombie">
+      <img src="../images/yeti.webp" alt="Yeti Zombie" />
+    </div>
+
+    <div class="zombie-box" data-note="Bungee Zombie">
+      <img src="../images/bungee.webp" alt="Bungee Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Ladder Zombie">
+      <img src="../images/ladder.webp" alt="Ladder Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Catapult Zombie">
+      <img src="../images/catapult.webp" alt="Catapult Zombie" />
+    </div>
+    <div class="zombie-box" data-note="Gargantuar">
+      <img src="../images/gargantuar.webp" alt="Gargantuar" />
+    </div>
+    <div class="zombie-box" data-note="Imp">
+      <img src="../images/imp.webp" alt="Imp" />
+    </div>
+
+
+    <div class="zombie-box centered" data-note="Dr. Zomboss">
+      <img src="../images/drzomboss.webp" alt="Dr. Zomboss" />
+    </div>
+  </div>
+
+    <!-- Scripts -->
+  <script src="../js/zombies.js"></script>
+  <script src="../js/homepage.js"></script>
+</body>
+</html>

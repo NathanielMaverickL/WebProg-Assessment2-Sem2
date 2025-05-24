@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puzzle Mode</title>
+  <link rel="stylesheet" href="../css/puzzle.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <!-- Hamburger (sun icon) -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Music Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/moongrains.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sidebar hamburger menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Page title -->
+  <div class="page-title">Puzzle</div>
+
+  <!-- Puzzle grid -->
+  <div class="puzzle-grid">
+    <!-- 20 puzzle boxes -->
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Vasebreaker"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="To the Left"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Third Vase"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Chain Reaction"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="M is for Metal"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Scary Potter"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Hokey Pokey"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Another Chain Reaction"/></div>
+    <div class="puzzle-game"><img src="../images/vasepuzzle.png" alt="Ace of Vase"/></div>
+    <div class="puzzle-game"><img src="../images/vaseendless.png" alt="Vasebreaker Endless"/></div>
+
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="I. Zombie"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="I. Zombie Too"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="Can You Dig It?"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="Totally Nuts"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="Dead Zeppelin"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="Me Smash!"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="ZomBoogie"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="Three Hit Wonder"/></div>
+    <div class="puzzle-game"><img src="../images/zombiepuzzle.png" alt="All your brainz r belong to us"/></div>
+    <div class="puzzle-game"><img src="../images/zombieendless.png" alt="I. Zombie Endless"/></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/puzzle.js"></script>
+  <script src="../js/homepage.js"></script>
+</body>
+</html>

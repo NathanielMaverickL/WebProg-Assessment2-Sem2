@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plants vs Zombies 1</title>
+  <link rel="stylesheet" href="../css/home.css" />
+</head>
+<body>
+
+  <!-- Intro Container with Logo and Explore Button -->
+  <div class="intro-container">
+    <img src="../images/pvzwhitelogo.png" alt="Logo" class="logo-image" />
+    <a href="homepage.html" class="explore-btn"><b>EXPLORE THE GARDEN</b></a>
+  </div>
+
+  <!-- Music Toggle Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/intro.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- JavaScript -->
+  <script src="../js/home.js" defer></script>
+
+</body>
+</html>

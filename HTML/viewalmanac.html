@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Almanac</title>
+  <link rel="stylesheet" href="../css/viewalmanac.css" />
+</head>
+<body>
+  <!-- Full wallpaper background -->
+  <div class="background"></div>
+
+  <!-- Back Arrow to Homepage -->
+  <a href="homepage.html" class="back-arrow">&#8592;</a>
+
+  <!-- Hamburger (sun icon) -->
+  <div class="hamburger-icon" onclick="toggleSidebar()">
+    <img src="../images/pvzsun.webp" alt="Hamburger Menu" />
+  </div>
+
+  <!-- Music Button -->
+  <button id="music-btn" style="background:none; border:none; cursor:pointer;">
+    <img id="speaker-img" src="../images/off.png" alt="Speaker Button" width="30" />
+  </button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="../music/chooseyourseeds.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Sidebar hamburger menu -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-nav">
+      <a href="homepage.html" class="sidebar-button">Home</a>
+      <a href="minigames.html" class="sidebar-button">Mini Games</a>
+      <a href="survival.html" class="sidebar-button">Survival</a>
+      <a href="puzzle.html" class="sidebar-button">Puzzle</a>
+      <a href="achievements.html" class="sidebar-button">Achievements</a>
+    </div>
+    <div class="sidebar-image">
+      <img src="../images/pvzhands.webp" alt="Sidebar image" />
+    </div>
+  </div>
+
+  <!-- Icon boxes -->
+  <div class="icon-container">
+    <a href="plants.html" class="icon-box" style="background-color: #696B1D">
+      <div class="icon-image">
+        <img src="../images/sunflower.webp" alt="Sunflower Icon" />
+      </div>
+      <div class="icon-label">PLANTS</div>
+    </a>
+
+    <a href="zombies.html" class="icon-box" style="background-color: #967F3F">
+      <div class="icon-image">
+        <img src="../images/zombie.webp" alt="Common Zombie" />
+      </div>
+      <div class="icon-label">ZOMBIES</div>
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../js/homepage.js"></script>
+</body>
+</html>
